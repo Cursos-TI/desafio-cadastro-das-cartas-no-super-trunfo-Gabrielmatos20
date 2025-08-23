@@ -3,8 +3,8 @@
 int main() {
     //declaração de variávei
     char codigo[4];
-    char estado[20];
-    char cidade[20];
+    char estado[50];
+    char cidade[50];
     int populacao;
     float area;
     float pib;
@@ -34,8 +34,8 @@ int main() {
     printf("Digite a quantidade de pontos turísticos: ");
     scanf("%d", &pontos_turisticos);
 
-    densidade_pop = populacao / area;
-    pib_per_capita = pib / populacao;
+    densidade_pop = (float) populacao / area;
+    pib_per_capita = (float) pib / populacao;
 
     //imprimindo na tela as informações da 1° carta
     printf("\n********************************\n");
